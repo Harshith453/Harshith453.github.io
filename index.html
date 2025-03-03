@@ -5,80 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .about, .projects, .contact {
-            background-color: #fff;
-            margin: 1rem;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #0f0e0e;
+}
+header {
+    background-color: #000000;
+    font-size: larger;
+    height: 20px;
+    text-align: right;
+    padding: 2rem 0;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #04d1cd;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.Home {
+    background-color: #333232;
+    color: aqua;
+    height: 400px;
+    font-size: 40px;
+}
+p1{
+    color: rgb(59, 122, 122);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about{
+    background-color: #333232;
+    color: aqua;
+    height: 400px;
+    font-size: 40px;
+}
+p2{
+    color: rgb(212, 221, 221);
+    font-size: 33px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.Skills{
+    background-color: #333232;
+    color: aqua;
+    height: 400px;
+    font-size: 40px;
+}
+h3{
+    color: rgb(212, 221, 221);
+    font-size: 33px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.contact{
+    background-color: #333232;
+    color: aqua;
+    height: 600px;
+    font-size: 40px;
+}
+p4{
+    color: rgb(212, 221, 221);
+    font-size: 33px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+p5{
+    color: rgb(212, 221, 221);
+    font-size: 33px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.container{
+    padding: 20px;
+    color: #0d0d0e;
+    background-color: #fff;
+    background-color: #fff;
+    height: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
     </style>
 </head>
 <body>
-
     <header>
-        <h1>P.S.R.Harshith</h1>
-        <p>Front-end Developer | Designer | Programmer</p>
         <nav>
             <ul>
+                <li><a href="#Home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    <section id="Home" class="Home">
+        <h1>P.S.R.Harshith</h1>
+        <p1>Front-end Developer | Designer | Programmer</p1>
+    </section>
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>
+        <p2>
             Hi! I'm [Your Name], a passionate web developer with experience in front-end development.
             I specialize in creating user-friendly websites and web applications. I love learning new technologies and
             staying up to date with the latest trends in web development.
-        </p>
+        </p2>
     </section>
 
     <section id="Skills" class="Skills">
@@ -99,8 +171,13 @@
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to work together, feel free to reach out!</p>
-        <p>Email: <a href="mailto:harshith.pemmaraju@sasi.ac.in">your.harshith.pemmaraju@sasi.ac.in</a></p>
+        <div class="container">
+            <label for="uname"><b>Fullname</b></label>
+            <input type="text" placeholder="Enter Fullname" name="uname" required>    
+            <label for="psw"><b></b>Email address</label>
+            <input type="password" placeholder="Enter email address" name="psw" required>             
+            <button type="submit">send message</button>
+          </div>
     </section>
 
     <footer>
